@@ -8,5 +8,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # DRAT-repos: redirect queries to drat repos hosted as GitHub pages
-RewriteRule ^(.*)/([^/]+\.github\.io)/(.*)$ http://$2/$1/$3 [L,QSA]
+RewriteRule ^(.*)$ http://renozao.github.io/$1 [L,QSA]
+#RewriteRule ^(.*)/([^/]+\.github\.io)/(.*)$ http://$2/$1/$3 [L,QSA]
 </IfModule>
